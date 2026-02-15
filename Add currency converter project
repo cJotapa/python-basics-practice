@@ -1,0 +1,50 @@
+{
+  "nbformat": 4,
+  "nbformat_minor": 0,
+  "metadata": {
+    "colab": {
+      "provenance": [],
+      "authorship_tag": "ABX9TyNzaHQOe8WIqx6pGe4Rm4cE",
+      "include_colab_link": true
+    },
+    "kernelspec": {
+      "name": "python3",
+      "display_name": "Python 3"
+    },
+    "language_info": {
+      "name": "python"
+    }
+  },
+  "cells": [
+    {
+      "cell_type": "markdown",
+      "metadata": {
+        "id": "view-in-github",
+        "colab_type": "text"
+      },
+      "source": [
+        "<a href=\"https://colab.research.google.com/github/cJotapa/python-basics-practice/blob/main/Add%20currency%20converter%20project\" target=\"_parent\"><img src=\"https://colab.research.google.com/assets/colab-badge.svg\" alt=\"Open In Colab\"/></a>"
+      ]
+    },
+    {
+      "cell_type": "code",
+      "execution_count": null,
+      "metadata": {
+        "id": "9QQh0_RA3KeW"
+      },
+      "outputs": [],
+      "source": [
+        "# Ask for the amounts\n",
+        "pesos = float(input(\"Enter Colombian pesos: \"))\n",
+        "soles = float(input(\"Enter Peruvian soles: \"))\n",
+        "reais = float(input(\"Enter Brazilian reais: \"))\n",
+        "\n",
+        "# Calculate total in USD\n",
+        "total_usd = (pesos * 0.00025) + (soles * 0.27) + (reais * 0.20)\n",
+        "\n",
+        "# Show result formatted\n",
+        "print(f\"Total in USD: ${total_usd:.2f}\")"
+      ]
+    }
+  ]
+}
